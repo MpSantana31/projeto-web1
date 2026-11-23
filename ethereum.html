@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ethereum: a ideia do projeto, os contratos inteligentes e a importância dele para a web3.">
+  <title>Ethereum · Privacidade na era Web3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="index.html">
+      Privacidade na era Web3
+    </a>
+    <nav aria-label="principal">
+      <a href="index.html">início</a>
+      <a href="sobre.html">sobre</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="caminho" aria-label="localização">
+      ethereum
+    </nav>
+
+    <h1>Ethereum</h1>
+
+    <section id="projeto">
+      <h2>A ideia do projeto</h2>
+
+      <p>
+        Ethereum é uma blockchain pública lançada em 2015, proposta por Vitalik Buterin
+        em 2013 e cofundada por Gavin Wood e outros autores. A ideia central: o Bitcoin
+        era uma blockchain para dinheiro; Ethereum seria uma blockchain para programas.
+        No lugar de registrar apenas transferências, a rede executa
+        <em>contratos inteligentes</em>, programas que rodam de forma coletiva entre
+        milhares de computadores e se cumprem por código, sem operador central.
+      </p>
+
+      <p>
+        A moeda da rede, o ETH, remunera quem mantém os computadores ligados e paga as
+        taxas de execução dos programas, o <em>gás</em>. A rede migrou de mineração para
+        prova de participação em 2022, com a atualização conhecida como <em>merge</em>,
+        reduzindo drasticamente o consumo de energia.
+      </p>
+
+      <figure class="figura">
+        <img src="https://br.coingape.com/wp-content/uploads/2025/05/vitalik-buterin-tecnologia-ethereum.webp"
+             alt="Vitalik Buterin, criador do Ethereum, em apresentação sobre a tecnologia da rede">
+        <figcaption>Vitalik Buterin, autor da proposta original do Ethereum</figcaption>
+      </figure>
+    </section>
+
+    <section id="padroes">
+      <h2>Os padrões que a rede criou</h2>
+
+      <p>
+        O Ethereum não parou em contratos: ele virou o laboratório onde os padrões da
+        web3 foram escritos. Os <em>ERC-20</em> definiram o formato dos tokens
+        fungíveis, hoje usados de stablecoins a pontos de fidelidade; os
+        <em>ERC-721</em> criaram o formato dos NFTs, certificados de propriedade de
+        itens únicos; e padrões mais recentes, como o <em>ERC-4337</em>, levam contas
+        inteligentes às carteiras. Qualquer rede que lançou um token depois seguiu
+        esses formatos, e é por isso que o vocabulário inteiro do mercado, token,
+        NFT, gás, saiu daqui.
+      </p>
+    </section>
+
+    <section id="defi-moderno">
+      <h2>A base do DeFi moderno</h2>
+
+      <p>
+        É sobre contratos do Ethereum que o mercado de finanças descentralizadas
+        descrito na nota <a href="defi.html">DeFi Privado e ZK-Compliance</a> se
+        sustenta: bolsas automatizadas, protocolos de empréstimo e stablecoins
+        como o DAI operam sobre a rede, compondo bilhões de dólares em liquidez que
+        se conectam entre si por composição de contratos, o efeito de dinheiro
+        programável. Até as redes rivais na velocidade, Solana entre elas, disputam o
+        mesmo território que o Ethereum mapeou primeiro.
+      </p>
+
+      <p>
+        A camada que vem crescendo desde 2020 são as redes de segunda camada, os
+        <em>L2</em>, como Arbitrum e Base, que executam as transações fora do
+        Ethereum principal e devolvem para ele provas resumidas: taxas centenas de
+        vezes menores, mantendo a segurança da rede-mãe. É nessa arquitetura, L1 como
+        juiz e L2 como esfera, que a maior parte do dia a dia on-chain acontece hoje.
+      </p>
+    </section>
+
+    <section id="web3">
+      <h2>A importância dele para a web3</h2>
+
+      <p>
+        A web3, termo cunhado por Gavin Wood justamente durante a criação do Ethereum,
+        precisava de uma infraestrutura que funcionasse na prática: uma camada de
+        consenso programável onde aplicativos pudessem viver sem servidor central e sem
+        operador capaz de modificar as regras. Ethereum forneceu essa base. A maioria
+        dos aplicativos associados à web3, carteiras, bolsas descentralizadas, mercado
+        de NFTs e organizações autônomas, nasceu sobre contratos inteligentes do
+        Ethereum ou de redes derivadas dele.
+      </p>
+
+      <p>
+        É essa combinação de propriedade verificável e programas sem intermediários
+        que sustenta as promessas de web3 discutidas neste site: identidade ligada a
+        chaves, ativos que pertencem ao usuário e pagamentos nativos. A nota
+        <a href="privacidade.html">Privacidade na Web3</a> mostra o outro lado:
+        o mesmo ledger público que garante a propriedade também registra toda a
+        atividade de todos os endereços, para sempre.
+      </p>
+    </section>
+
+  </main>
+
+  <aside>
+
+    <section>
+      <h2>Grafo local</h2>
+      <div id="graph" data-page="ethereum"></div>
+    </section>
+
+    <section>
+      <h2>Nesta página</h2>
+
+      <ul>
+        <li><a href="#projeto">A ideia do projeto</a></li>
+        <li><a href="#padroes">Os padrões que a rede criou</a></li>
+        <li><a href="#defi-moderno">A base do DeFi moderno</a></li>
+        <li><a href="#web3">A importância dele para a web3</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Backlinks</h2>
+      <ul id="backlinks" data-page="ethereum"></ul>
+    </section>
+
+  </aside>
+
+  <footer>
+    <p>
+      <span>Ordem de leitura:</span>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><em class="aqui">Ethereum</em><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/force-graph"></script>
+  <script src="js/graph-data.js"></script>
+  <script src="js/graph.js"></script>
+</body>
+</html>

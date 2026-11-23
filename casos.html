@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Casos reais: MetaMask, Polymarket e Hyperliquid, exemplos de carteira, mercado de previsão e derivativos on-chain.">
+  <title>Casos Reais · Privacidade na era Web3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="index.html">
+      Privacidade na era Web3
+    </a>
+    <nav aria-label="principal">
+      <a href="index.html">início</a>
+      <a href="sobre.html">sobre</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="caminho" aria-label="localização">
+      casos
+    </nav>
+
+    <h1>Casos Reais</h1>
+
+    <p>
+      Três nomes aparecem repetidas vezes neste site. Esta nota descreve o que cada
+      um é na prática, do aplicativo de uso diário aos mercados financeiros que só
+      existiam em bolsas centralizadas.
+    </p>
+
+    <section id="metamask">
+      <h2>MetaMask</h2>
+
+      <p>
+        A carteira de referência no ecossistema Ethereum, lançada em 2016 pela
+        Consensys como extensão de navegador, hoje também aplicativo de celular. Na
+        prática, é a porta de entrada da maioria: quem interage com aplicativos
+        descentralizados quase sempre instala o MetaMask primeiro, o que a torna o
+        exemplo mais difundido do modelo descrito na nota
+        <a href="carteiras.html">Carteiras e Chaves</a>.
+      </p>
+
+      <p>
+        Ela guarda a chave privada no dispositivo do usuário, apresenta as transações
+        dos sites para assinatura e avisa quando o pedido parece perigoso. Nela fica
+        visível o dilema de experiência do usuário da web3: a seed phrase, a lista de
+        palavras que regenera a chave, é responsabilidade de quem anota, e golpes que
+        fingem pedir a frase vitimam usuários em escala industrial.
+      </p>
+    </section>
+
+    <section id="polymarket">
+      <h2>Polymarket</h2>
+
+      <p>
+        Um mercado de previsão: pessoas compram e vendem participações sobre o
+        resultado de eventos reais, eleições, decisões judiciais, marcos de economia e
+        esporte. Cada pergunta se resume a duas ações, sim e não, cujo preço flutua
+        entre 0 e 1 dólar conforme a percepção de probabilidade, e o acerto paga um
+        dólar. O livro de ofertas é casado por um operador central, mas os fundos
+        ficam em stablecoins, o USDC, numa blockchain pública, o Polygon, o que dá
+        liquidação transparente sem intermediário financeiro tradicional.
+      </p>
+
+      <p>
+        Ganhou destaque mundial nas eleições norte-americanas de 2024, quando seu
+        agregado de probabilidades precedeu os resultados oficiais. A operação também
+        ilustra a zona cinzenta regulatória da área: um acordo de 2022 com a CFTC
+        restringiu o acesso de usuários nos EUA, e o modelo de negócio continua
+        dependendo de decisões de cada jurisdição.
+      </p>
+    </section>
+
+    <section id="hyperliquid">
+      <h2>Hyperliquid</h2>
+
+      <p>
+        Uma bolsa descentralizada de contratos perpétuos, derivativos com margem
+        indeterminada no tempo. O diferente é a arquitetura: no lugar do modelo
+        comum do DeFi, que usa contratos e pools de liquidez, o Hyperliquid roda o
+        livro de ofertas completo, ordem a ordem, dentro de uma blockchain própria,
+        consolidando o que normalmente fica no servidor de uma bolsa centralizada
+        e oferecendo alavancagem, autoliquidação e listagem de ativos sem
+        permissionamento.
+      </p>
+
+      <p>
+        A distribuição do token HYPE, em 2024, quase toda para a comunidade e sem
+        investidores de capital de risco no lote inicial, tornou o caso referência
+        de construção com incentivos ao usuário. A nota
+        <a href="defi.html">DeFi Privado e ZK-Compliance</a> descreve o contra ponto
+        que acompanha esse volume: posições, margens e estratégias ficam visíveis
+        on-chain, e MEV e vigilância de mercado continuam nos debates do setor.
+      </p>
+    </section>
+
+  </main>
+
+  <aside>
+
+    <section>
+      <h2>Grafo local</h2>
+      <div id="graph" data-page="casos"></div>
+    </section>
+
+    <section>
+      <h2>Nesta página</h2>
+
+      <ul>
+        <li><a href="#metamask">MetaMask</a></li>
+        <li><a href="#polymarket">Polymarket</a></li>
+        <li><a href="#hyperliquid">Hyperliquid</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Backlinks</h2>
+      <ul id="backlinks" data-page="casos"></ul>
+    </section>
+
+  </aside>
+
+  <footer>
+    <p>
+      <span>Ordem de leitura:</span>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><em class="aqui">Casos</em><span class="sep">→</span><a href="sobre.html">Sobre</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/force-graph"></script>
+  <script src="js/graph-data.js"></script>
+  <script src="js/graph.js"></script>
+</body>
+</html>

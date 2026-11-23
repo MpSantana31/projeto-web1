@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DeFi privado e compliance institucional: ZK-compliance, AML/KYC e proteção contra MEV.">
+  <title>DeFi Privado e ZK-Compliance · Privacidade na era Web3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="index.html">
+      Privacidade na era Web3
+    </a>
+    <nav aria-label="principal">
+      <a href="index.html">início</a>
+      <a href="sobre.html">sobre</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="caminho" aria-label="localização">
+      ecossistema
+    </nav>
+
+    <h1>DeFi Privado e Compliance Institucional</h1>
+
+    <section id="defi">
+      <h2>DeFi e suas pretensões de privacidade</h2>
+
+      <p>
+        O ecossistema de finanças descentralizadas, o <em>DeFi</em>, opera em liquidez
+        aberta: bolsas automatizadas e protocolos de empréstimo vivem em contratos
+        inteligentes, acessíveis a qualquer endereço de
+        <a href="carteiras.html">carteira</a>. Mas a transparência total das
+        blockchains, como descrito na nota
+        <a href="privacidade.html">Privacidade na Web3</a>, cobra seu preço: todo
+        pedido de compra e venda, toda posição e toda estratégia ficam visíveis em
+        tempo real para quem quiser ler a rede.
+      </p>
+
+      <p>
+        Para grandes fundos e empresas tradicionais, esse nível de exposição é
+        desclassificante. Um gestor não pode revelar em público as posições que monta,
+        com que margem e em que momento, assim como um banco não publica sua
+        tesouraria. A consequência direta é que a maior parte do volume institucional
+        do mundo ainda evita o DeFi aberto. Mercados como a bolsa de derivativos
+        Hyperliquid e o mercado de previsão Polymarket, descritos na nota
+        <a href="casos.html">Casos Reais</a>, vivem exatamente essa condição.
+      </p>
+    </section>
+
+    <section id="mev">
+      <h2>MEV e front-running</h2>
+
+      <p>
+        O efeito mais concreto dessa transparência é o <em>front-running</em>: como
+        todas as transações ficam pendentes em uma fila pública, a mempool, bots
+        conseguem ver a intenção de negociação antes de ela ser executada e
+        antecipam-se a ela, comprando primeiro para revender mais caro ao pedido
+        original, inflando o preço e capturando valor. O valor extraído dessa forma
+        tem nome, <em>MEV</em>, valor extraível pelos operadores de blocos, e é
+        um imposto invisível pago por quem negocia sem privacidade.
+      </p>
+
+      <p>
+        Soluções de privacidade transacional, fluxos criptografados ou <em>blobs</em>
+        ofuscados até a inclusão no bloco, atacam exatamente esse canal: se os
+        concorrentes não conseguem ler a estratégia na mempool, não há como
+        antecipá-la.
+      </p>
+    </section>
+
+    <section id="zk-compliance">
+      <h2>ZK-Compliance</h2>
+
+      <p>
+        O complemento do problema é regulatório. Fundos e empresas não podem simplesmente
+        operar no anonimato: regras de prevenção à lavagem de dinheiro, <em>AML</em>,
+        e de identificação de clientes, <em>KYC</em>, exigem provar quem está do outro
+        lado da transação, especialmente que o endereço não pertence a listas de
+        sanções. As provas de conhecimento zero, as <em>ZKP</em> citadas na nota
+        <a href="identidade.html">Identidade Autossoberana</a>, oferecem a saída técnica:
+        o participante gera uma prova criptográfica de que cumpre as regras, sem
+        revelar quem é, qual o valor operado ou qual a estratégia.
+      </p>
+
+      <p>
+        É o modelo chamado <em>ZK-compliance</em>: a compliance institucional por
+        prova, e não por exposição. Pools privados de liquidez já operam assim,
+        como o Aztec, e identificadores como o <em>Tracing Tag</em> do protocolo
+        Railgun permitem a verificação de sanções sobre transações individuais sem
+        vincular endereços a identidades. O mesmo desenho permite comprovar limites
+        regulatórios, solvência de tesourarias e residência fiscal dentro das regras,
+        sem abrir a carteira para o mercado.
+      </p>
+
+      <p>
+        Resta a tensão que atravessa o site: quem garante que a prova não é uma
+        casinha de privacidade para o crime? A resposta da indústria tem sido combinar
+        as provas com identidades verificáveis do emissor, com a nota
+        <a href="armazenamento.html">Armazenamento Descentralizado</a> mantendo
+        material de auditoria fora do alcance público, e com a imposição legal
+        discutida no caso do Tornado Cash, tema que a nota
+        <a href="privacidade.html">Privacidade na Web3</a> detalha.
+      </p>
+    </section>
+
+  </main>
+
+  <aside>
+
+    <section>
+      <h2>Grafo local</h2>
+      <div id="graph" data-page="defi"></div>
+    </section>
+
+    <section>
+      <h2>Nesta página</h2>
+
+      <ul>
+        <li><a href="#defi">DeFi e suas pretensões de privacidade</a></li>
+        <li><a href="#mev">MEV e front-running</a></li>
+        <li><a href="#zk-compliance">ZK-Compliance</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Backlinks</h2>
+      <ul id="backlinks" data-page="defi"></ul>
+    </section>
+
+  </aside>
+
+  <footer>
+    <p>
+      <span>Ordem de leitura:</span>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><em class="aqui">DeFi</em><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/force-graph"></script>
+  <script src="js/graph-data.js"></script>
+  <script src="js/graph.js"></script>
+</body>
+</html>
