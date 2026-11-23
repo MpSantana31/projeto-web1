@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Identidade Autossoberana (SSI) e Credenciais Verificáveis (VCs): provar quem se é sem entregar os dados.">
+  <title>Identidade Autossoberana · Privacidade na era Web3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="index.html">
+      Privacidade na era Web3
+    </a>
+    <nav aria-label="principal">
+      <a href="index.html">início</a>
+      <a href="sobre.html">sobre</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="caminho" aria-label="localização">
+      identidade
+    </nav>
+
+    <h1>Identidade Autossoberana</h1>
+
+    <section id="ssi">
+      <h2>Identidade Autossoberana (SSI)</h2>
+
+      <p>
+        A Identidade Autossoberana, ou <em>Self-Sovereign Identity</em> (SSI), inverte a
+        arquitetura de login usual. Na Web 2.0, a identidade pertence a quem mantém o
+        banco de dados: cada plataforma guarda seus cadastros, e o usuário distribui
+        documentos, telefones e endereços por todas elas, aumentando a superfície de
+        vazamento. Na SSI, a identidade mora com o usuário, ancorada nas chaves da
+        <a href="carteiras.html">carteira</a>, e é ele quem apresenta as provas quando
+        cada serviço pede, na medida em que pede.
+      </p>
+
+      <p>
+        O bloco de construção é o <em>DID</em>, Identificador Decentralizado: um padrão
+        da W3C para endereços de identidade que não dependem de uma empresa central,
+        podendo ser resolvidos por uma blockchain ou por outro registro verificável. É
+        a evolução formal da ideia de que o login não deveria pertencer a nenhuma
+        plataforma.
+      </p>
+    </section>
+
+    <section id="vcs">
+      <h2>Credenciais Verificáveis (VCs)</h2>
+
+      <p>
+        Credenciais Verificáveis, também padronizadas pela W3C, são os documentos
+        digitais carregados no modelo SSI. O ciclo tem três papéis: um <em>emissor</em>
+        confiável, como um governo, uma universidade ou uma empresa, assina
+        criptograficamente uma credencial, por exemplo, a de que a pessoa tem mais de
+        18 anos; o <em>titular</em> guarda essa credencial na sua carteira; e um
+        <em>verificador</em>, o site que precisa do dado, confere a assinatura do
+        emissor sem falar com ele.
+      </p>
+
+      <p>
+        A diferença para o modelo atual: em vez de enviar o documento inteiro, com
+        nome, número, endereço, o titular pode apresentar só a informação pedida, e
+        em alguns esquemas provar a afirmação sem revelar o dado de origem, usando
+        provas de conhecimento zero. O site que apenas quer confirmar a maioridade não
+        precisa saber a data exata de nascimento nem guardar uma cópia do documento
+        para sempre.
+      </p>
+    </section>
+
+    <section id="nuancas">
+      <h2>Promessas e limites</h2>
+
+      <p>
+        O ganho de privacidade é direto: menos cópias de documentos espalhadas por
+        bancos de dados frágeis e menos rastreamento cruzado entre serviços, já que
+        cada credencial pode ser usada sem ligar os usos a uma conta única. Padrões
+        como o europeu <em>eIDAS 2.0</em> e carteiras de identidade nacionais já
+        incorporam a ideia fora do universo cripto.
+      </p>
+
+      <p>
+        Os limites também continuam, como discute a nota
+        <a href="privacidade.html">Privacidade na Web3</a>: a confiança continua
+        dependendo de quem emite, e muitos emissores são exatamente os estados e
+        grandes empresas do modelo atual. E a base continua sendo a posse da chave
+        privada, com todas as consequências de perda e responsabilidade descritas na
+        nota <a href="carteiras.html">Carteiras e Chaves</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <aside>
+
+    <section>
+      <h2>Grafo local</h2>
+      <div id="graph" data-page="identidade"></div>
+    </section>
+
+    <section>
+      <h2>Nesta página</h2>
+
+      <ul>
+        <li><a href="#ssi">Identidade Autossoberana (SSI)</a></li>
+        <li><a href="#vcs">Credenciais Verificáveis (VCs)</a></li>
+        <li><a href="#nuancas">Promessas e limites</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Backlinks</h2>
+      <ul id="backlinks" data-page="identidade"></ul>
+    </section>
+
+  </aside>
+
+  <footer>
+    <p>
+      <span>Ordem de leitura:</span>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><em class="aqui">Identidade</em><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/force-graph"></script>
+  <script src="js/graph-data.js"></script>
+  <script src="js/graph.js"></script>
+</body>
+</html>
