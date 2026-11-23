@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bitcoin: a primeira blockchain, o pseudônimo Satoshi Nakamoto e a privacidade por endereços.">
+  <title>Bitcoin · Privacidade na era Web3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="index.html">
+      Privacidade na era Web3
+    </a>
+    <nav aria-label="principal">
+      <a href="index.html">início</a>
+      <a href="sobre.html">sobre</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="caminho" aria-label="localização">
+      bitcoin
+    </nav>
+
+    <h1>Bitcoin</h1>
+
+    <section id="satoshi">
+      <h2>O pseudônimo e o artigo</h2>
+
+      <p>
+        Em outubro de 2008, um artigo de nove páginas, <em>Bitcoin: A Peer-to-Peer
+        Electronic Cash System</em>, apareceu em uma lista de discussão sobre
+        criptografia, assinado por Satoshi Nakamoto. O nome nunca foi confirmado: é um
+        pseudônimo de uma pessoa ou de um grupo, e a identidade permanece desconhecida
+        até hoje. Em janeiro de 2009 o primeiro programa da rede foi publicado, e o
+        bloco de abertura, o <em>bloco gênese</em>, carregou embutido a manchete do
+        jornal The Times daquele dia sobre resgate bancário, marca deliberada da
+        motivação do projeto: um dinheiro que não depende de bancos.
+      </p>
+    </section>
+
+    <section id="primeira">
+      <h2>A primeira blockchain</h2>
+
+      <p>
+        Bitcoin é a primeira <a href="blockchain.html">blockchain</a> em operação, a
+        prova de que o modelo funciona: nós voluntários espalhados pelo mundo mantêm
+        cópias idênticas do registro, e a prova de trabalho, com a mineração,
+        arbitra quem escreve o próximo bloco. Algumas escolhas definiram o projeto: a
+        emissão é fixa em 21 milhões de moedas; a recompensa da mineração cai pela
+        metade a cada quatro anos, o <em>halving</em>; e a moeda não tem emissor,
+        administração ou limite ajustável. Quinze anos depois, a rede continua no ar,
+        sem nunca ter sido paralisada.
+      </p>
+
+      <p>
+        Foi também o berço de parte da história contada neste site: Gavin Wood, que
+        depois cunharia o termo web3 e cofundaria o
+        <a href="ethereum.html">Ethereum</a>, entrou no ecossistema como
+        cofundador de uma carteira para Bitcoin, antes de dirigir a atenção ao que
+        faltava: execução de programas na rede.
+      </p>
+    </section>
+
+    <section id="pseudonimo">
+      <h2>Privacidade e pseudônimo</h2>
+
+      <p>
+        A privacidade no Bitcoin é o caso de estudo do dilema descrito na nota
+        <a href="privacidade.html">Privacidade na Web3</a>: os endereços não têm nome,
+        e um novo endereço pode ser criado a cada transação sem custo. Na teoria, é um
+        sistema pseudônimo. Na prática, todo o histórico fica público para sempre, e
+        anos de análise de padrões, junto com pontos de troca que exigem identificação,
+        ligaram grande parte dos endereços a pessoas e empresas reais. Ferramentas de
+        rastreamento de Blockchain Analytics hoje seguem fluxos de Bitcoin com precisão
+        surpreendente.
+      </p>
+
+      <p>
+        É desse aprendizado que nasceu o esforço das redes seguintes: tornar a
+        privacidade tecnicamente real, por provas criptográficas, e não apenas uma
+        suposição sobre o pseudônimo.
+      </p>
+    </section>
+
+  </main>
+
+  <aside>
+
+    <section>
+      <h2>Grafo local</h2>
+      <div id="graph" data-page="bitcoin"></div>
+    </section>
+
+    <section>
+      <h2>Nesta página</h2>
+
+      <ul>
+        <li><a href="#satoshi">O pseudônimo e o artigo</a></li>
+        <li><a href="#primeira">A primeira blockchain</a></li>
+        <li><a href="#pseudonimo">Privacidade e pseudônimo</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Backlinks</h2>
+      <ul id="backlinks" data-page="bitcoin"></ul>
+    </section>
+
+  </aside>
+
+  <footer>
+    <p>
+      <span>Ordem de leitura:</span>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><em class="aqui">Bitcoin</em><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/force-graph"></script>
+  <script src="js/graph-data.js"></script>
+  <script src="js/graph.js"></script>
+</body>
+</html>

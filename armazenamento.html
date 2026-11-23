@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Armazenamento descentralizado: arquivos fragmentados em rede P2P, com IPFS, Arweave e Filecoin.">
+  <title>Armazenamento Descentralizado · Privacidade na era Web3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="index.html">
+      Privacidade na era Web3
+    </a>
+    <nav aria-label="principal">
+      <a href="index.html">início</a>
+      <a href="sobre.html">sobre</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="caminho" aria-label="localização">
+      armazenamento
+    </nav>
+
+    <h1>Armazenamento Descentralizado</h1>
+
+    <section id="porque">
+      <h2>Por que guardar fora da blockchain</h2>
+
+      <p>
+        Registrar dados numa blockchain é caro: cada byte ocupa espaço em todas as
+        cópias do registro e paga taxas proporcionais ao tamanho. Por isso, arquivos
+        pesados, vídeos, imagens, metadados e até o front-end de aplicativos
+        descentralizados, não ficam on-chain. Eles vivem em redes de armazenamento
+        ponto a ponto, enquanto a blockchain guarda apenas referências, como o hash do
+        conteúdo, que atestam a integridade do que está do outro lado.
+      </p>
+    </section>
+
+    <section id="como">
+      <h2>Fragmentação e distribuição</h2>
+
+      <p>
+        O funcionamento segue uma receita comum. O arquivo é quebrado em fragmentos e,
+        quando é o caso, criptografado antes de sair do computador de quem o publica.
+        Cada fragmento é identificado pelo próprio hash do conteúdo, e não por um
+        endereço de servidor: o conteúdo aponta para onde está, e o endereço é o mesmo
+        em qualquer nó que o tenha. As cópias se espalham entre os computadores
+        voluntários da rede, e quem solicita o arquivo busca os fragmentos nos nós mais
+        próximos, recompondo o original ao recebê-los.
+      </p>
+
+      <p>
+        O resultado prático: não existe um servidor que possa ser derrubado, censurado
+        ou que desapareça levando o conteúdo junto. O front-end de um aplicativo pode
+        ser servido pela própria rede, e o site continua no ar enquanto houver nós
+        guardando seus fragmentos.
+      </p>
+    </section>
+
+    <section id="protocolos">
+      <h2>Protocolos</h2>
+
+      <h3>IPFS</h3>
+      <p>
+        O Protocolo InterPlanetary, mais conhecido como IPFS, popularizou o
+        endereçamento por conteúdo: os arquivos são identificados por CID, um hash do
+        conteúdo, e qualquer nó que o mantenha pode servi-los. Manter um arquivo
+        disponível depende de alguém fixá-lo, o <em>pinning</em>, o que gerou um
+        mercado de serviços de fixação.
+      </p>
+
+      <h3>Filecoin</h3>
+      <p>
+        Construído sobre o mesmo modelo do IPFS, o Filecoin adiciona uma blockchain
+        com incentivos econômicos: provedores competem para armazenar dados de forma
+        verificável e são pagos em tokens por manterem as cópias disponíveis, com
+        provas criptográficas de que os dados continuam lá.
+      </p>
+
+      <h3>Arweave</h3>
+      <p>
+        O Arweave aposta na permanência: paga-se uma única vez e o dado fica gravado
+        numa estrutura própria, o <em>blockweave</em>, que incentiva os nós a manterem
+        o histórico inteiro. É usado para preservar páginas, metadados de NFTs e
+        registros que não podem simplesmente desaparecer.
+      </p>
+
+      <p>
+        A mesma propriedade que protege o conteúdo da censura cria dilemas conhecidos
+        da nota <a href="privacidade.html">Privacidade na Web3</a>: conteúdo distribuído
+        e permanente pode incluir material ilegal, e remover algo da rede é quase
+        impossível. E, sem a camada de integridade garantida pelo
+        <a href="blockchain.html">hash</a>, não haveria como confiar que o fragmento
+        recebido é o que foi publicado.
+      </p>
+    </section>
+
+  </main>
+
+  <aside>
+
+    <section>
+      <h2>Grafo local</h2>
+      <div id="graph" data-page="armazenamento"></div>
+    </section>
+
+    <section>
+      <h2>Nesta página</h2>
+
+      <ul>
+        <li><a href="#porque">Por que guardar fora da blockchain</a></li>
+        <li><a href="#como">Fragmentação e distribuição</a></li>
+        <li><a href="#protocolos">Protocolos</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Backlinks</h2>
+      <ul id="backlinks" data-page="armazenamento"></ul>
+    </section>
+
+  </aside>
+
+  <footer>
+    <p>
+      <span>Ordem de leitura:</span>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><em class="aqui">Armazenamento</em><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/force-graph"></script>
+  <script src="js/graph-data.js"></script>
+  <script src="js/graph.js"></script>
+</body>
+</html>
