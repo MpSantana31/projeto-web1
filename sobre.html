@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sobre o projeto: site estático sobre privacidade e segurança na era Web3 — Web1.">
+  <title>Sobre · Privacidade na era Web3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="index.html">
+      Privacidade na era Web3
+    </a>
+    <nav aria-label="principal">
+      <a href="index.html">início</a>
+      <a href="sobre.html" aria-current="page">sobre</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <nav class="caminho" aria-label="localização">
+      sobre
+    </nav>
+
+    <h1>Sobre o projeto</h1>
+
+    <section id="projeto">
+      <h2>O projeto</h2>
+
+      <p>
+        Este site é um trabalho da disciplina de Web1. O objetivo é
+        discutir, em formato de site estático, a relação entre a World Wide Web e a
+        sociedade, com foco no tema <a href="index.html">privacidade na era Web3</a>:
+        as promessas de descentralização e as críticas sobre vigilância, golpes e
+        centralização real.
+      </p>
+
+      <p>
+        O conteúdo é apresentado como um conjunto de notas interligadas, navegáveis
+        pelos links internos e por um grafo que mostra as referências entre as páginas,
+        no estilo das ferramentas de anotação em grafo.
+      </p>
+    </section>
+
+    <section id="tecnologia">
+      <h2>Tecnologia</h2>
+
+      <ul>
+        <li>HTML, CSS e JavaScript executados no navegador, sem back-end</li>
+        <li>Sem banco de dados: todo o conteúdo está nos próprios arquivos</li>
+        <li>Navegação em grafo implementada com a biblioteca force-graph, sobre canvas</li>
+        <li>Hospedagem em provedor estático</li>
+      </ul>
+    </section>
+
+    <section id="autor">
+      <h2>Autor</h2>
+
+      <p>
+        Projeto individual desenvolvido por Marcos P Santana, em 2026.
+      </p>
+    </section>
+
+    <section id="visuais">
+      <h2>Referências visuais</h2>
+
+      <ul>
+        <li><a href="https://obsidian.md">Obsidian</a> — navegação em grafo e a ideia de vault de notas</li>
+        <li><a href="https://metamask.io">MetaMask</a> — hero animado, tipografia grande e tom do texto de apresentação</li>
+        <li><a href="https://ethereum.org">ethereum.org</a> — header, paleta roxa e tom enciclopédico das explicações</li>
+        <li><a href="https://uniswap.org">Uniswap</a> — fundo escuro com brilhos suaves e cartões translúcidos</li>
+        <li><a href="https://polymarket.com">Polymarket</a> — pills, chips e contraste na interface escura</li>
+        <li><a href="https://hyperliquid.xyz">Hyperliquid</a> — estética de terminal financeiro com destaque de cor</li>
+      </ul>
+    </section>
+
+    <section id="referencias">
+      <h2>Referências</h2>
+
+      <ul>
+        <li><a href="https://ethereum.org/pt-br/web3/">O que é Web3? — ethereum.org</a></li>
+        <li><a href="https://ethereum.org/pt-br/roadmap/privacy/">Privacidade — ethereum.org</a></li>
+        <li><a href="https://ethereum.org/pt-br/security/">Segurança e prevenção de golpes — ethereum.org</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <aside>
+
+    <section>
+      <h2>Grafo local</h2>
+      <div id="graph" data-page="sobre"></div>
+    </section>
+
+    <section>
+      <h2>Backlinks</h2>
+      <ul id="backlinks" data-page="sobre"></ul>
+    </section>
+
+  </aside>
+
+  <footer>
+    <p>
+      <span>Ordem de leitura:</span>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><em class="aqui">Sobre</em>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/force-graph"></script>
+  <script src="js/graph-data.js"></script>
+  <script src="js/graph.js"></script>
+</body>
+</html>
