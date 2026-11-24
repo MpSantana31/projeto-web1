@@ -34,21 +34,17 @@
       <h2>Identidade Autossoberana (SSI)</h2>
 
       <p>
-        A Identidade Autossoberana, ou <em>Self-Sovereign Identity</em> (SSI), inverte a
-        arquitetura de login usual. Na Web 2.0, a identidade pertence a quem mantém o
-        banco de dados: cada plataforma guarda seus cadastros, e o usuário distribui
-        documentos, telefones e endereços por todas elas, aumentando a superfície de
-        vazamento. Na SSI, a identidade mora com o usuário, ancorada nas chaves da
-        <a href="carteiras.html">carteira</a>, e é ele quem apresenta as provas quando
-        cada serviço pede, na medida em que pede.
+        A Identidade Autossoberana, ou <em>Self-Sovereign Identity</em> (SSI), inverte o
+        login usual. Na Web 2.0, a identidade pertence a quem mantém o banco de dados:
+        cada plataforma guarda seu cadastro, e o usuário espalha documentos e telefones
+        por todas, multiplicando os pontos de vazamento. Na SSI, a identidade mora com o
+        usuário, ancorada nas chaves da <a href="carteiras.html">carteira</a>.
       </p>
 
       <p>
-        O bloco de construção é o <em>DID</em>, Identificador Decentralizado: um padrão
-        da W3C para endereços de identidade que não dependem de uma empresa central,
-        podendo ser resolvidos por uma blockchain ou por outro registro verificável. É
-        a evolução formal da ideia de que o login não deveria pertencer a nenhuma
-        plataforma.
+        O bloco de construção é o <em>DID</em>, Identificador Decentralizado, padrão da
+        W3C para endereços de identidade que não dependem de uma empresa e podem ser
+        resolvidos por uma blockchain.
       </p>
     </section>
 
@@ -56,22 +52,18 @@
       <h2>Credenciais Verificáveis (VCs)</h2>
 
       <p>
-        Credenciais Verificáveis, também padronizadas pela W3C, são os documentos
-        digitais carregados no modelo SSI. O ciclo tem três papéis: um <em>emissor</em>
-        confiável, como um governo, uma universidade ou uma empresa, assina
-        criptograficamente uma credencial, por exemplo, a de que a pessoa tem mais de
-        18 anos; o <em>titular</em> guarda essa credencial na sua carteira; e um
-        <em>verificador</em>, o site que precisa do dado, confere a assinatura do
-        emissor sem falar com ele.
+        Credenciais Verificáveis, também padrão da W3C, são os documentos digitais
+        desse modelo. O ciclo tem três papéis. O <em>emissor</em>, como um governo ou
+        uma universidade, assina a credencial. O <em>titular</em> guarda na carteira. O
+        <em>verificador</em> confere a assinatura do emissor sem falar com ele.
       </p>
 
       <p>
-        A diferença para o modelo atual: em vez de enviar o documento inteiro, com
-        nome, número, endereço, o titular pode apresentar só a informação pedida, e
-        em alguns esquemas provar a afirmação sem revelar o dado de origem, usando
-        provas de conhecimento zero. O site que apenas quer confirmar a maioridade não
-        precisa saber a data exata de nascimento nem guardar uma cópia do documento
-        para sempre.
+        A diferença é o recorte do dado. <strong>Quanto o site precisa saber?</strong>
+        Em vez do documento inteiro, com nome, número e endereço, o titular apresenta só
+        o que foi pedido. Em alguns esquemas, prova a afirmação sem revelar o dado de
+        origem. O site que quer confirmar a maioridade não precisa saber a data de
+        nascimento nem guardar cópia do documento para sempre.
       </p>
     </section>
 
@@ -79,20 +71,18 @@
       <h2>Promessas e limites</h2>
 
       <p>
-        O ganho de privacidade é direto: menos cópias de documentos espalhadas por
-        bancos de dados frágeis e menos rastreamento cruzado entre serviços, já que
-        cada credencial pode ser usada sem ligar os usos a uma conta única. Padrões
-        como o europeu <em>eIDAS 2.0</em> e carteiras de identidade nacionais já
-        incorporam a ideia fora do universo cripto.
+        O ganho é direto: menos cópias em bancos de dados frágeis e menos rastreamento
+        cruzado, porque a credencial não precisa ligar os usos a uma conta única. O
+        eIDAS 2.0, da União Europeia, aprovado em 2024, e carteiras de identidade
+        nacionais já seguem essa linha fora do universo cripto.
       </p>
 
       <p>
-        Os limites também continuam, como discute a nota
-        <a href="privacidade.html">Privacidade na Web3</a>: a confiança continua
-        dependendo de quem emite, e muitos emissores são exatamente os estados e
-        grandes empresas do modelo atual. E a base continua sendo a posse da chave
-        privada, com todas as consequências de perda e responsabilidade descritas na
-        nota <a href="carteiras.html">Carteiras e Chaves</a>.
+        Os limites continuam. A confiança ainda depende de quem emite, e muitos
+        emissores são os próprios Estados e empresas do modelo atual. A base segue sendo
+        a chave privada, com as consequências de perda descritas em
+        <a href="carteiras.html">Carteiras e Chaves</a>, e a nota
+        <a href="privacidade.html">Privacidade na Web3</a> mostra o outro lado.
       </p>
     </section>
 
@@ -125,7 +115,7 @@
   <footer>
     <p>
       <span>Ordem de leitura:</span>
-      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><em class="aqui">Identidade</em><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="vigilancia.html">Vigilância</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><em class="aqui">Identidade</em><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
     </p>
   </footer>
 
