@@ -4,6 +4,7 @@ const VAULT = (() => {
   const nodes = {
     "index":        { title: "Início",                  url: "index.html" },
     "privacidade":  { title: "Privacidade na Web3",     url: "privacidade.html" },
+    "vigilancia":   { title: "Vigilância Estatal",      url: "vigilancia.html" },
     "historia":     { title: "História da web",         url: "historia.html" },
     "blockchain":   { title: "Blockchain",              url: "blockchain.html" },
     "bitcoin":      { title: "Bitcoin",                 url: "bitcoin.html" },
@@ -23,17 +24,23 @@ const VAULT = (() => {
     ["index", "bitcoin"],
     ["index", "identidade"],
     ["historia", "privacidade"],
+    ["vigilancia", "privacidade"],
+    ["vigilancia", "defi"],
+    ["vigilancia", "identidade"],
     ["historia", "ethereum"],
     ["historia", "blockchain"],
     ["ethereum", "privacidade"],
+    ["ethereum", "defi"],
     ["blockchain", "ethereum"],
     ["blockchain", "privacidade"],
     ["bitcoin", "blockchain"],
     ["bitcoin", "privacidade"],
+    ["bitcoin", "ethereum"],
     ["armazenamento", "blockchain"],
     ["armazenamento", "privacidade"],
     ["carteiras", "ethereum"],
     ["carteiras", "privacidade"],
+    ["carteiras", "historia"],
     ["identidade", "carteiras"],
     ["identidade", "privacidade"],
     ["defi", "carteiras"],
@@ -41,7 +48,8 @@ const VAULT = (() => {
     ["defi", "identidade"],
     ["defi", "armazenamento"],
     ["casos", "carteiras"],
-    ["casos", "defi"]
+    ["casos", "defi"],
+    ["casos", "privacidade"]
   ];
 
   const edges = [];
