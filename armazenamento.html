@@ -34,12 +34,11 @@
       <h2>Por que guardar fora da blockchain</h2>
 
       <p>
-        Registrar dados numa blockchain é caro: cada byte ocupa espaço em todas as
-        cópias do registro e paga taxas proporcionais ao tamanho. Por isso, arquivos
-        pesados, vídeos, imagens, metadados e até o front-end de aplicativos
-        descentralizados, não ficam on-chain. Eles vivem em redes de armazenamento
-        ponto a ponto, enquanto a blockchain guarda apenas referências, como o hash do
-        conteúdo, que atestam a integridade do que está do outro lado.
+        Registrar dados numa <a href="blockchain.html">blockchain</a> é caro: cada byte
+        ocupa espaço em todas as cópias e paga taxa proporcional. Arquivos pesados,
+        vídeos, metadados e até o front-end de aplicativos descentralizados ficam fora.
+        Eles vivem em redes ponto a ponto, e a blockchain guarda só a referência, o hash
+        do conteúdo, que atesta a integridade.
       </p>
     </section>
 
@@ -47,20 +46,18 @@
       <h2>Fragmentação e distribuição</h2>
 
       <p>
-        O funcionamento segue uma receita comum. O arquivo é quebrado em fragmentos e,
-        quando é o caso, criptografado antes de sair do computador de quem o publica.
-        Cada fragmento é identificado pelo próprio hash do conteúdo, e não por um
-        endereço de servidor: o conteúdo aponta para onde está, e o endereço é o mesmo
-        em qualquer nó que o tenha. As cópias se espalham entre os computadores
-        voluntários da rede, e quem solicita o arquivo busca os fragmentos nos nós mais
-        próximos, recompondo o original ao recebê-los.
+        O arquivo é quebrado em fragmentos e, quando é o caso, criptografado antes de
+        sair do computador de quem publica. Cada fragmento é identificado pelo hash do
+        conteúdo, não por um endereço de servidor: qualquer nó que tenha o pedaço pode
+        servi-lo. Quem pede o arquivo busca os fragmentos nos nós mais próximos e
+        remonta o original.
       </p>
 
       <p>
-        O resultado prático: não existe um servidor que possa ser derrubado, censurado
-        ou que desapareça levando o conteúdo junto. O front-end de um aplicativo pode
-        ser servido pela própria rede, e o site continua no ar enquanto houver nós
-        guardando seus fragmentos.
+        Não existe servidor que possa ser derrubado ou desapareça levando o conteúdo
+        junto. Um site pode ser servido pela própria rede e continua no ar enquanto
+        houver nós guardando seus fragmentos. <strong>E quem apaga o que não deveria
+        estar lá?</strong> Ninguém. É o mesmo mecanismo, com o sinal trocado.
       </p>
     </section>
 
@@ -69,36 +66,34 @@
 
       <h3>IPFS</h3>
       <p>
-        O Protocolo InterPlanetary, mais conhecido como IPFS, popularizou o
-        endereçamento por conteúdo: os arquivos são identificados por CID, um hash do
-        conteúdo, e qualquer nó que o mantenha pode servi-los. Manter um arquivo
-        disponível depende de alguém fixá-lo, o <em>pinning</em>, o que gerou um
-        mercado de serviços de fixação.
+        O Protocolo InterPlanetary popularizou o endereçamento por conteúdo: os
+        arquivos são identificados por CID, um hash, e qualquer nó que os mantenha pode
+        servi-los. Manter disponível depende de alguém fixar o arquivo, o
+        <em>pinning</em>, e disso nasceu um mercado de serviços.
       </p>
 
       <h3>Filecoin</h3>
       <p>
-        Construído sobre o mesmo modelo do IPFS, o Filecoin adiciona uma blockchain
-        com incentivos econômicos: provedores competem para armazenar dados de forma
-        verificável e são pagos em tokens por manterem as cópias disponíveis, com
-        provas criptográficas de que os dados continuam lá.
+        Sobre o mesmo modelo do IPFS, o Filecoin adiciona uma blockchain com incentivo
+        econômico: provedores competem para armazenar de forma verificável e são pagos
+        em tokens, com provas criptográficas de que as cópias continuam lá.
       </p>
 
       <h3>Arweave</h3>
       <p>
-        O Arweave aposta na permanência: paga-se uma única vez e o dado fica gravado
-        numa estrutura própria, o <em>blockweave</em>, que incentiva os nós a manterem
-        o histórico inteiro. É usado para preservar páginas, metadados de NFTs e
-        registros que não podem simplesmente desaparecer.
+        O Arweave aposta na permanência: paga-se uma vez e o dado fica numa estrutura
+        própria, o <em>blockweave</em>, que incentiva os nós a manter o histórico
+        inteiro. É usado para preservar páginas, metadados de NFTs e registros que não
+        podem desaparecer.
       </p>
+    </section>
+
+
+    <section class="lente">
+      <h2>Lente de privacidade</h2>
 
       <p>
-        A mesma propriedade que protege o conteúdo da censura cria dilemas conhecidos
-        da nota <a href="privacidade.html">Privacidade na Web3</a>: conteúdo distribuído
-        e permanente pode incluir material ilegal, e remover algo da rede é quase
-        impossível. E, sem a camada de integridade garantida pelo
-        <a href="blockchain.html">hash</a>, não haveria como confiar que o fragmento
-        recebido é o que foi publicado.
+        Guardar conteúdo de forma distribuída e permanente protege contra censura, mas também significa que nada pode ser apagado, inclusive dados de terceiros. O mesmo mecanismo que mantém um site no ar impede a remoção do que não deveria estar lá, dilema discutido na nota <a href="privacidade.html">Privacidade na Web3</a>.
       </p>
     </section>
 
@@ -131,7 +126,7 @@
   <footer>
     <p>
       <span>Ordem de leitura:</span>
-      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><em class="aqui">Armazenamento</em><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="vigilancia.html">Vigilância</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><em class="aqui">Armazenamento</em><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
     </p>
   </footer>
 

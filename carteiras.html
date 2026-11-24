@@ -34,18 +34,13 @@
       <h2>Passaporte universal e cofre digital</h2>
 
       <p>
-        Numa web3, a carteira cumpre os dois papéis que hoje cabem a um punhado de
-        empresas: é passaporte e cofre ao mesmo tempo. Como passaporte, o endereço da
-        carteira funciona como identidade em qualquer aplicativo, sem criar conta em
-        cada um deles. Como cofre, guarda os ativos do usuário, tokens, NFTs e
-        registros de reputação, que ficam vinculados ao endereço e não a uma
-        plataforma, como descrito na nota <a href="privacidade.html">Privacidade na Web3</a>.
-      </p>
-
-      <p>
-        O contrato é simples: quem controla a chave privada controla tudo que está no
-        endereço. Não existe empresa por trás, gerente de conta ou formulário de
-        recuperação.
+        A carteira cumpre os dois papéis que hoje cabem a um punhado de empresas:
+        passaporte e cofre. Como passaporte, o endereço funciona em qualquer aplicativo
+        sem criar conta. Como cofre, guarda tokens, NFTs e reputação vinculados ao
+        endereço, não à plataforma, como explica a nota
+        <a href="privacidade.html">Privacidade na Web3</a>.
+        <strong>Quem tem a chave?</strong> Só o dono. Não existe empresa por trás,
+        gerente de conta nem recuperação.
       </p>
     </section>
 
@@ -53,21 +48,17 @@
       <h2>Carteiras não custodiais</h2>
 
       <p>
-        Uma carteira <em>não custodial</em> é a modalidade central da web3: o aplicativo
-        apenas guarda a chave privada no computador ou celular do usuário e nunca a
-        envia para ninguém. A criptografia assimétrica faz o trabalho: a chave privada
-        assina cada transação, e qualquer pessoa da rede pode verificar a assinatura com
-        a chave pública correspondente, sem jamais conhecer a privada. Na comparação
-        clássica, é como um cofre cuja fechadura só abre de dentro, e que pode provar,
-        de fora, que quem assinou é o dono.
+        Uma carteira <em>não custodial</em> guarda a chave privada no computador ou
+        celular e nunca a envia para ninguém. A criptografia assimétrica faz o resto: a
+        chave privada assina a transação, e a rede verifica a assinatura com a chave
+        pública, sem nunca conhecer a privada.
       </p>
 
       <p>
-        O oposto são as carteiras custodiais, nas quais uma empresa guarda a chave e
-        permite movimentar os ativos pela interface dela: conveniente, mas uma
-        recentralização, o usuário volta a depender da regra da empresa, como a nota
-        <a href="historia.html">História da web</a> descreve para as plataformas da
-        Web 2.0.
+        As carteiras custodiais fazem o contrário: a empresa guarda a chave e libera as
+        movimentações pela interface dela. É conveniente e recentraliza o controle, como
+        a nota <a href="historia.html">História da web</a> descreve para as plataformas
+        da Web 2.0.
       </p>
     </section>
 
@@ -75,22 +66,27 @@
       <h2>Exemplos e login por carteira</h2>
 
       <ul>
-        <li><strong>MetaMask:</strong> a extensão de navegador mais usada, porta de entrada típica para aplicativos Ethereum, descrita em detalhe na nota <a href="casos.html">Casos Reais</a></li>
-        <li><strong>Rabby:</strong> voltada a usuários experientes, com simulação da transação e alertas de risco antes de assinar</li>
-        <li><strong>Phantom:</strong> referência no ecossistema Solana, também em extensão e celular</li>
-        <li><strong>Ledger:</strong> carteira física, o <em>hardware wallet</em>, que mantém a chave privada dentro de um dispositivo dedicado e só libera assinaturas com botão físico</li>
+        <li><strong>MetaMask:</strong> a extensão mais usada, porta de entrada típica para aplicativos <a href="ethereum.html">Ethereum</a>, detalhada em <a href="casos.html">Casos Reais</a></li>
+        <li><strong>Rabby:</strong> pensada para usuários experientes, simula a transação e alerta riscos antes da assinatura</li>
+        <li><strong>Phantom:</strong> referência no ecossistema Solana, em extensão e celular</li>
+        <li><strong>Ledger:</strong> carteira física, a <em>hardware wallet</em>, que mantém a chave em um dispositivo dedicado e exige botão físico para assinar</li>
       </ul>
 
       <p>
-        No lado dos aplicativos, muitos sites aceitam login por carteira: um clique no
-        botão da extensão e uma mensagem é apresentada para assinatura, normalmente um
-        padrão como o Sign-In with Ethereum. Ao assinar, o site confirma a posse da
-        chave e libera o acesso, sem senha, e-mail ou formulário. O usuário pode
-        revogar a identidade daquele site a qualquer momento, trocando de endereço ou
-        usando endereços separados para separar contextos, e evitando que o histórico
-        único da blockchain, tema central da nota
-        <a href="privacidade.html">Privacidade na Web3</a>, ligue todos os usos a uma
-        só pessoa.
+        Muitos sites já aceitam login por carteira, normalmente no padrão Sign-In with
+        Ethereum: um clique, uma mensagem assinada e o acesso é liberado sem senha nem
+        formulário. Trocar de endereço ou manter um endereço por contexto limita o que
+        o histórico único da blockchain revela, assunto da nota
+        <a href="privacidade.html">Privacidade na Web3</a>.
+      </p>
+    </section>
+
+
+    <section class="lente">
+      <h2>Lente de privacidade</h2>
+
+      <p>
+        A carteira é a identidade do usuário em toda a web3, e cada site conectado vê o endereço e, com ele, o histórico associado. Práticas como endereços separados e uma carteira por contexto existem para limitar o que um mesmo endereço revela, tema da nota <a href="privacidade.html">Privacidade na Web3</a>.
       </p>
     </section>
 
@@ -123,7 +119,7 @@
   <footer>
     <p>
       <span>Ordem de leitura:</span>
-      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><em class="aqui">Carteiras</em><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="vigilancia.html">Vigilância</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><em class="aqui">Carteiras</em><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
     </p>
   </footer>
 
