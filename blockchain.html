@@ -34,7 +34,7 @@
       <h2>A criação da tecnologia</h2>
 
       <p>
-        As peças da blockchain existiam décadas antes do nome. Desde 1990, pesquisadores
+        As peças da blockchain existiam décadas antes do nome. Em 1991, pesquisadores
         como Stuart Haber e W. Scott Stornetta publicavam métodos para carimbar documentos
         com data e hora de forma à prova de alteração, encadeando registros por funções
         criptográficas de hash. A ideia era criar provas de integridade sem depender de
@@ -43,14 +43,12 @@
 
       <p>
         A tecnologia ficou prática em 2008, quando a pessoa ou grupo sob o pseudônimo
-        Satoshi Nakamoto publicou o artigo <em><a href="bitcoin.html">Bitcoin</a>: A Peer-to-Peer Electronic Cash
-        System</em>. O artigo combinou essas peças já conhecidas, hashes encadeados,
-        redes ponto a ponto e um mecanismo de consenso, e propôs algo novo: uma rede
-        inteira de computadores desconhecidos entre si que concorda sobre um único
-        histórico de transações, sem banco e sem operador central. Em janeiro de 2009 a
-        rede Bitcoin, detalhada na nota <a href="bitcoin.html">Bitcoin</a>, entrou no
-        ar, e cada bloco de transações, encadeado ao anterior, deu nome à tecnologia:
-        cadeia de blocos, <em>blockchain</em>.
+        Satoshi Nakamoto publicou o artigo <em><a href="bitcoin.html">Bitcoin</a>: A
+        Peer-to-Peer Electronic Cash System</em>. O artigo juntou peças conhecidas,
+        hashes encadeados, rede ponto a ponto e um mecanismo de consenso, e propôs o
+        que faltava: uma rede de computadores desconhecidos entre si concordando sobre
+        um único histórico, sem banco e sem operador central. A rede entrou no ar em
+        janeiro de 2009, e cada bloco encadeado ao anterior deu nome à tecnologia.
       </p>
 
       <figure class="figura">
@@ -65,45 +63,44 @@
 
       <h3>Blocos encadeados por hash</h3>
       <p>
-        Transações são agrupadas em blocos. Cada bloco guarda o hash do bloco anterior,
-        formando uma corrente: mudar um dado antigo alteraria o hash e quebraria todos
-        os blocos seguintes. O histórico é, na prática, imutável.
+        Transações são agrupadas em blocos. Cada bloco guarda o hash do anterior,
+        formando uma corrente: mudar um dado antigo quebra o hash e todos os blocos
+        seguintes. O histórico, na prática, não muda.
       </p>
 
-      <h3>Consensus sem confiança</h3>
+      <h3>Consenso sem confiança</h3>
       <p>
-        Milhares de cópias do registro vivem em nós espalhados pelo mundo. Para um novo
-        bloco ser aceito, a maioria da rede precisa validá-lo, e mecanismos como a prova
-        de trabalho ou a prova de participação decidem quem propõe o próximo bloco.
-        Atacar o registro exigiria controlar a maior parte do poder de decisão da rede,
-        algo cada vez mais caro quanto maiores as redes.
+        Milhares de cópias do registro vivem em nós espalhados pelo mundo.
+        <strong>Quem decide o próximo bloco?</strong> Na prova de trabalho, a mineração;
+        na prova de participação, quem depositou mais em garantia. A maioria valida o
+        bloco. Atacar o registro exige controlar a maior parte da rede, e o custo cresce
+        com o tamanho dela.
       </p>
 
       <h3>Propriedade por chaves</h3>
       <p>
-        Não existem contas de usuário: a posse é atestada por pares de chaves
-        criptográficas. Quem guarda a chave privada assina as transações, e quem a perde
-        perde o que havia no endereço, sem suporte e sem recuperação. É a base da
-        identidade própria que a web3 propõe.
+        Não existe conta de usuário: a posse vem de um par de chaves. Quem tem a chave
+        privada assina as transações, e quem a perde perde o que havia no endereço, sem
+        suporte. É a base da identidade própria que a web3 propõe.
       </p>
 
       <h3>Exemplos de uso e protocolos</h3>
       <p>
-        O <a href="bitcoin.html">Bitcoin</a>, a primeira blockchain, é usada como reserva de valor e meio de troca
-        ponto a ponto. O <a href="ethereum.html">Ethereum</a> leva a tecnologia para
-        programas em geral, com contratos inteligentes, carteiras, bolsas
-        descentralizadas e mercado de NFTs. A Solana aposta em blocos rápidos e taxas
-        baixas para aplicativos de alto volume, e o Polkadot, fundado por Gavin Wood,
-        conecta blockchains especializadas a uma rede central compartilhada. Apesar das
-        diferenças, todas seguem a mesma receita: registro distribuído, consenso entre
-        nós e propriedade por chaves.
+        O <a href="bitcoin.html">Bitcoin</a>, a primeira blockchain, serve de reserva de
+        valor e meio de troca ponto a ponto. O <a href="ethereum.html">Ethereum</a>
+        leva a tecnologia para programas em geral: contratos inteligentes, carteiras,
+        bolsas descentralizadas, NFTs. A Solana aposta em blocos rápidos e taxas baixas,
+        e o Polkadot, fundado por Gavin Wood, conecta redes especializadas. Todas seguem
+        a mesma receita: registro distribuído, consenso entre nós e posse por chaves.
       </p>
+    </section>
+
+
+    <section class="lente">
+      <h2>Lente de privacidade</h2>
 
       <p>
-        O <a href="ethereum.html">Ethereum</a> e outras redes como essa abriram caminho
-        para a web3. O outro lado dessa mesma moeda é o ponto central
-        da nota <a href="privacidade.html">Privacidade na Web3</a>: um registro público
-        e permanente de tudo.
+        Um registro distribuído é público por construção: toda transação fica visível para qualquer pessoa, para sempre. A transparência é o preço da confiança sem intermediário, e o histórico permanente de cada endereço é o problema central tratado na nota <a href="privacidade.html">Privacidade na Web3</a>.
       </p>
     </section>
 
@@ -135,7 +132,7 @@
   <footer>
     <p>
       <span>Ordem de leitura:</span>
-      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><em class="aqui">Blockchain</em><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="vigilancia.html">Vigilância</a><span class="sep">→</span><em class="aqui">Blockchain</em><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><a href="defi.html">DeFi</a><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
     </p>
   </footer>
 

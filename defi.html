@@ -34,24 +34,18 @@
       <h2>DeFi e suas pretensões de privacidade</h2>
 
       <p>
-        O ecossistema de finanças descentralizadas, o <em>DeFi</em>, opera em liquidez
-        aberta: bolsas automatizadas e protocolos de empréstimo vivem em contratos
-        inteligentes, acessíveis a qualquer endereço de
-        <a href="carteiras.html">carteira</a>. Mas a transparência total das
-        blockchains, como descrito na nota
-        <a href="privacidade.html">Privacidade na Web3</a>, cobra seu preço: todo
-        pedido de compra e venda, toda posição e toda estratégia ficam visíveis em
-        tempo real para quem quiser ler a rede.
+        O DeFi, finanças descentralizadas, opera em liquidez aberta: bolsas
+        automatizadas e empréstimos em contratos inteligentes, acessíveis a qualquer
+        <a href="carteiras.html">carteira</a>. A transparência das blockchains, tema da
+        nota <a href="privacidade.html">Privacidade na Web3</a>, cobra o preço: pedido,
+        posição e estratégia ficam visíveis em tempo real.
       </p>
 
       <p>
-        Para grandes fundos e empresas tradicionais, esse nível de exposição é
-        desclassificante. Um gestor não pode revelar em público as posições que monta,
-        com que margem e em que momento, assim como um banco não publica sua
-        tesouraria. A consequência direta é que a maior parte do volume institucional
-        do mundo ainda evita o DeFi aberto. Mercados como a bolsa de derivativos
-        Hyperliquid e o mercado de previsão Polymarket, descritos na nota
-        <a href="casos.html">Casos Reais</a>, vivem exatamente essa condição.
+        Para um fundo grande, essa exposição é desclassificante. Ninguém revela em
+        público as posições que monta, com que margem e em que momento. Por isso a maior
+        parte do volume institucional ainda evita o DeFi aberto, como mostram a
+        Hyperliquid e o Polymarket em <a href="casos.html">Casos Reais</a>.
       </p>
     </section>
 
@@ -59,20 +53,16 @@
       <h2>MEV e front-running</h2>
 
       <p>
-        O efeito mais concreto dessa transparência é o <em>front-running</em>: como
-        todas as transações ficam pendentes em uma fila pública, a mempool, bots
-        conseguem ver a intenção de negociação antes de ela ser executada e
-        antecipam-se a ela, comprando primeiro para revender mais caro ao pedido
-        original, inflando o preço e capturando valor. O valor extraído dessa forma
-        tem nome, <em>MEV</em>, valor extraível pelos operadores de blocos, e é
-        um imposto invisível pago por quem negocia sem privacidade.
+        O efeito mais concreto é o <em>front-running</em>. Front-running é imposto.
+        As transações ficam pendentes numa fila pública, a mempool, e os bots leem a
+        intenção antes da execução. Compram primeiro, revendem mais caro ao pedido
+        original e ficam com a diferença. O valor extraído assim chama-se <em>MEV</em>.
       </p>
 
       <p>
-        Soluções de privacidade transacional, fluxos criptografados ou <em>blobs</em>
-        ofuscados até a inclusão no bloco, atacam exatamente esse canal: se os
-        concorrentes não conseguem ler a estratégia na mempool, não há como
-        antecipá-la.
+        <strong>Dá para fechar esse canal?</strong> Dá. Fluxo criptografado e transação
+        ofuscada até a inclusão no bloco impedem a leitura. Só que custa latência e
+        infraestrutura, e a maior parte das bolsas prefere a corrida aberta.
       </p>
     </section>
 
@@ -80,34 +70,29 @@
       <h2>ZK-Compliance</h2>
 
       <p>
-        O complemento do problema é regulatório. Fundos e empresas não podem simplesmente
-        operar no anonimato: regras de prevenção à lavagem de dinheiro, <em>AML</em>,
-        e de identificação de clientes, <em>KYC</em>, exigem provar quem está do outro
-        lado da transação, especialmente que o endereço não pertence a listas de
-        sanções. As provas de conhecimento zero, as <em>ZKP</em> citadas na nota
-        <a href="identidade.html">Identidade Autossoberana</a>, oferecem a saída técnica:
-        o participante gera uma prova criptográfica de que cumpre as regras, sem
-        revelar quem é, qual o valor operado ou qual a estratégia.
+        Do outro lado está a regra. Fundos não podem operar no anonimato: <em>AML</em> e
+        <em>KYC</em> exigem provar quem está do outro lado, sobretudo que o endereço não
+        está em lista de sanções. As provas de conhecimento zero, as <em>ZKP</em> da
+        nota <a href="identidade.html">Identidade Autossoberana</a>, dão a saída: o
+        participante prova que cumpre a regra sem revelar quem é, quanto opera ou qual é
+        a estratégia.
       </p>
 
       <p>
-        É o modelo chamado <em>ZK-compliance</em>: a compliance institucional por
-        prova, e não por exposição. Pools privados de liquidez já operam assim,
-        como o Aztec, e identificadores como o <em>Tracing Tag</em> do protocolo
-        Railgun permitem a verificação de sanções sobre transações individuais sem
-        vincular endereços a identidades. O mesmo desenho permite comprovar limites
-        regulatórios, solvência de tesourarias e residência fiscal dentro das regras,
-        sem abrir a carteira para o mercado.
+        É o <em>ZK-compliance</em>. Pools privados como o Aztec já operaram assim (o
+        Aztec Connect foi desligado em 2023), e o <em>Tracing Tag</em> do Railgun
+        permite checar sanções sobre transações individuais sem ligar endereços a
+        identidades. O mesmo desenho comprova limite regulatório, solvência de tesouraria
+        e residência fiscal sem abrir a carteira para o mercado.
       </p>
 
       <p>
-        Resta a tensão que atravessa o site: quem garante que a prova não é uma
-        casinha de privacidade para o crime? A resposta da indústria tem sido combinar
-        as provas com identidades verificáveis do emissor, com a nota
-        <a href="armazenamento.html">Armazenamento Descentralizado</a> mantendo
-        material de auditoria fora do alcance público, e com a imposição legal
-        discutida no caso do Tornado Cash, tema que a nota
-        <a href="privacidade.html">Privacidade na Web3</a> detalha.
+        Quem garante que a prova não é esconderijo para crime? A indústria combina as
+        provas com identidades verificáveis do emissor. Mantém material de auditoria
+        fora do alcance público, como discute a nota
+        <a href="armazenamento.html">Armazenamento Descentralizado</a>. E ainda enfrenta
+        a disputa legal do caso Tornado Cash, detalhada em
+        <a href="privacidade.html">Privacidade na Web3</a>.
       </p>
     </section>
 
@@ -140,7 +125,7 @@
   <footer>
     <p>
       <span>Ordem de leitura:</span>
-      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><em class="aqui">DeFi</em><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
+      <a href="index.html">Início</a><span class="sep">→</span><a href="historia.html">História</a><span class="sep">→</span><a href="privacidade.html">Privacidade</a><span class="sep">→</span><a href="vigilancia.html">Vigilância</a><span class="sep">→</span><a href="blockchain.html">Blockchain</a><span class="sep">→</span><a href="bitcoin.html">Bitcoin</a><span class="sep">→</span><a href="ethereum.html">Ethereum</a><span class="sep">→</span><a href="carteiras.html">Carteiras</a><span class="sep">→</span><a href="identidade.html">Identidade</a><span class="sep">→</span><a href="armazenamento.html">Armazenamento</a><span class="sep">→</span><em class="aqui">DeFi</em><span class="sep">→</span><a href="casos.html">Casos</a><span class="sep">→</span><a href="sobre.html">Sobre</a>
     </p>
   </footer>
 
